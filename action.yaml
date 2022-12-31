@@ -1,0 +1,14 @@
+name: 'Factorio Version Check'
+description: 'Obtains the current stable and experimental versions of Factorio'
+inputs:
+  version_type:
+    description: 'The version type to get, valid values: "alpha", "demo", "headless"'
+    default: headless
+outputs:
+  experimental:
+    description: 'Current experimental version'
+  stable:
+    description: 'Current stable version'
+runs:
+  using: 'node16'
+  main: 'main.js'

@@ -1,4 +1,5 @@
 name: 'Factorio Version Check'
+author: 'DedlySpyder <DedlySpyder@gmail.com>'
 description: 'Obtains the current stable and experimental versions of Factorio'
 inputs:
   version_type:
@@ -12,3 +13,6 @@ outputs:
 runs:
   using: 'node16'
   main: 'main.js'
+branding:
+  color: orange
+  icon: cpu

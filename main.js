@@ -16,5 +16,5 @@ https.get('https://factorio.com/api/latest-releases', (res) => {
     core.setOutput('stable', versions.stable[type]);
   });
 }).on('error', (err) => {
-  core.setFailed(err.message);
+  core.setFailed(err.message)
 });
